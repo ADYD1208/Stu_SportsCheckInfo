@@ -73,3 +73,8 @@ Reletive = Reletive.join(A_UMOpening.set_index('Student_ID_Number'),on='Student_
 ```
 Reletive.to_excel("D:\Mass\Sports_data\Combine\CPED1002_019.xlsx")
 ```
+## 常见错误
+当列名，例如上述代码中的```NightRun```，```NightRun_In```和```NightRun_Out```没有完全修改成功时，会出现列名重复的报错。
+```
+ValueError: columns overlap but no suffix specified: Index(['Diabolo1024'], dtype='object')
+```
