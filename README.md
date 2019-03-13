@@ -13,25 +13,24 @@ To collection the student information with their Check in &amp; Check out inform
 ### 更换班级
 
 将如下代码行替换成需要输入的学生班级表格
-'''
-学生数据导入
-Student_info = pd.read_excel('D:\Mass\Sports_data\Water_class\section019.xlsx')
-'''
+  '''
+  学生数据导入
+  '''
+  Student_info = pd.read_excel('D:\Mass\Sports_data\Water_class\section019.xlsx')
 ### 添加活动
 #### 1 添加表格
-在-活动数据-模块中，添加如下代码行
-'''
-'''
-A_NightRun20190117
-'''
-A_NightRun =pd.read_excel('D:\Mass\Sports_data\Active\A_NightRun20190117.xlsx')
-A_NightRun.rename(columns={A_NightRun.columns[0]:"Student_ID_Number"}, inplace=True)
-A_NightRun.rename(columns={A_NightRun.columns[1]:"NightRun_In"}, inplace=True )
-A_NightRun.rename(columns={A_NightRun.columns[2]:"NightRun_Out"},inplace=True)
+在**活动数据**模块中，添加如下代码行
+  '''
+  A_NightRun20190117
+  '''
+  A_NightRun =pd.read_excel('D:\Mass\Sports_data\Active\A_NightRun20190117.xlsx')
+  A_NightRun.rename(columns={A_NightRun.columns[0]:"Student_ID_Number"}, inplace=True)
+  A_NightRun.rename(columns={A_NightRun.columns[1]:"NightRun_In"}, inplace=True )
+  A_NightRun.rename(columns={A_NightRun.columns[2]:"NightRun_Out"},inplace=True)
 
-A_NightRun['NightRun']=A_NightRun['NightRun_Out']-A_NightRun['NightRun_In']
-A_NightRun['NightRun']=A_NightRun['NightRun'] / np.timedelta64(60,'s')
-'''
+  A_NightRun['NightRun']=A_NightRun['NightRun_Out']-A_NightRun['NightRun_In']
+  A_NightRun['NightRun']=A_NightRun['NightRun'] / np.timedelta64(60,'s')
+  
 其中需要更改的变量名有：
 
 #### 2 添加表格关联
