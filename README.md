@@ -39,9 +39,9 @@ A_NightRun['NightRun']=A_NightRun['NightRun'] / np.timedelta64(60,'s')          
 ```
 ---
 以添加活动为UM Opening为例，其中需要更改的变量名有：
-* 将A_NightRun改为相对应活动名称。例如，添加UMOpening为活动，则将所有变量A_NightRun改为A_UMOpening
+* 将```A_NightRun```改为相对应活动名称。例如，添加UM Opening为活动，则将所有变量```A_NightRun```改为```A_UMOpening```。
 * 同时修改需要导入的表格以及表格地址
-* 更改签到表列名，Check in & Check out列名改为相对应活动列名。例如，将夜跑活动的NightRun，改为UMOpening;将夜跑活动的NightRun_In，改为Opening_In; 将将夜跑活动的NightRun_Out，改为Opening_Out（注意要改两次）
+* 更改签到表列名，Check in & Check out列名改为相对应活动列名。例如，将夜跑活动的```NightRun```，改为```UMOpening```;将夜跑活动的```NightRun_In```，改为```Opening_In```; 将将夜跑活动的```NightRun_Out```，改为```Opening_Out```（注意要改两次）
 ---
 更改后的代码为
 ```python
@@ -63,7 +63,7 @@ A_UMOpening['UMOpening']=A_UMOpening['UMOpening'] / np.timedelta64(60,'s')
 ```python
 Reletive = Reletive.join(A_NightRun.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
 ```
-还以添加活动UMOpening为例更改文件名与刚才所更改的活动文件名一致，如A_NightRun改为A_UMOpening
+还以添加活动UM Opening为例更改文件名与刚才所更改的活动文件名一致，如```A_NightRun```改为```A_UMOpening```
 ```python
 Reletive = Reletive.join(A_UMOpening.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
 ```
