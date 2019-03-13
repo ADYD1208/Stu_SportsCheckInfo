@@ -82,27 +82,6 @@ A_NightRun.rename(columns={A_NightRun.columns[2]:"NightRun_Out"},inplace=True)
 A_NightRun['NightRun']=A_NightRun['NightRun_Out']-A_NightRun['NightRun_In']
 A_NightRun['NightRun']=A_NightRun['NightRun'] / np.timedelta64(60,'s')
 
-'''
-A_NightRun20190117
-'''
-A_NightRun =pd.read_excel('D:\Mass\Sports_data\Active\A_NightRun20190117.xlsx')
-A_NightRun.rename(columns={A_NightRun.columns[0]:"Student_ID_Number"}, inplace=True)
-A_NightRun.rename(columns={A_NightRun.columns[1]:"NightRun_In"}, inplace=True )
-A_NightRun.rename(columns={A_NightRun.columns[2]:"NightRun_Out"},inplace=True)
-
-A_NightRun['NightRun']=A_NightRun['NightRun_Out']-A_NightRun['NightRun_In']
-A_NightRun['NightRun']=A_NightRun['NightRun'] / np.timedelta64(60,'s')
-'''
-'''
-#A_NightRun20190117
-'''
-A_NightRun =pd.read_excel('D:\Mass\Sports_data\Active\A_NightRun20190117.xlsx')
-A_NightRun.rename(columns={A_NightRun.columns[0]:"Student_ID_Number"}, inplace=True)
-A_NightRun.rename(columns={A_NightRun.columns[1]:"NightRun_In"}, inplace=True )
-A_NightRun.rename(columns={A_NightRun.columns[2]:"NightRun_Out"},inplace=True)
-
-A_NightRun['NightRun']=A_NightRun['NightRun_Out']-A_NightRun['NightRun_In']
-A_NightRun['NightRun']=A_NightRun['NightRun'] / np.timedelta64(60,'s')
 
 '''
 #A_DiaboloSports1024
@@ -115,6 +94,7 @@ A_Diabolo1024.rename(columns={A_Diabolo1024.columns[2]:"Diabolo_Out"},inplace=Tr
 A_Diabolo1024['Diabolo1024']=A_Diabolo1024['Diabolo_Out']-A_Diabolo1024['Diabolo_In']
 A_Diabolo1024['Diabolo1024']=A_Diabolo1024['Diabolo1024'] / np.timedelta64(60,'s')
 
+
 '''
 #A_DiaboloSports1027
 '''
@@ -123,8 +103,8 @@ A_Diabolo1027.rename(columns={A_Diabolo1027.columns[0]:"Student_ID_Number"}, inp
 A_Diabolo1027.rename(columns={A_Diabolo1027.columns[1]:"Diabolo_In1027"}, inplace=True )
 A_Diabolo1027.rename(columns={A_Diabolo1027.columns[2]:"Diabolo_Out1027"},inplace=True)
 
-A_Diabolo1027['Diabolo1024']=A_Diabolo1027['Diabolo_Out1027']-A_Diabolo1027['Diabolo_In1027']
-A_Diabolo1027['Diabolo1024']=A_Diabolo1027['Diabolo1024'] / np.timedelta64(60,'s')
+A_Diabolo1027['Diabolo1027']=A_Diabolo1027['Diabolo_Out1027']-A_Diabolo1027['Diabolo_In1027']
+A_Diabolo1027['Diabolo1027']=A_Diabolo1027['Diabolo1027'] / np.timedelta64(60,'s')
 
 '''
 #A_DiaboloSports1107
@@ -134,19 +114,19 @@ A_Diabolo1107.rename(columns={A_Diabolo1107.columns[0]:"Student_ID_Number"}, inp
 A_Diabolo1107.rename(columns={A_Diabolo1107.columns[1]:"Diabolo_In1107"}, inplace=True )
 A_Diabolo1107.rename(columns={A_Diabolo1107.columns[2]:"Diabolo_Out1107"},inplace=True)
 
-A_Diabolo1107['Diabolo1024']=A_Diabolo1107['Diabolo_Out1107']-A_Diabolo1107['Diabolo_In1107']
-A_Diabolo1107['Diabolo1024']=A_Diabolo1107['Diabolo1024'] / np.timedelta64(60,'s')
+A_Diabolo1107['Diabolo1107']=A_Diabolo1107['Diabolo_Out1107']-A_Diabolo1107['Diabolo_In1107']
+A_Diabolo1107['Diabolo1107']=A_Diabolo1107['Diabolo1107'] / np.timedelta64(60,'s')
 
 '''
-A_DiaboloSports1114
+#A_DiaboloSports1114
 '''
 A_Diabolo1114 =pd.read_excel('D:\Mass\Sports_data\Active\A_DiaboloSport1114.xlsx')
 A_Diabolo1114.rename(columns={A_Diabolo1114.columns[0]:"Student_ID_Number"}, inplace=True)
 A_Diabolo1114.rename(columns={A_Diabolo1114.columns[1]:"Diabolo_In1114"}, inplace=True )
 A_Diabolo1114.rename(columns={A_Diabolo1114.columns[2]:"Diabolo_Out1114"},inplace=True)
 
-A_Diabolo1114['Diabolo1024']=A_Diabolo1114['Diabolo_Out1114']-A_Diabolo1114['Diabolo_In1114']
-A_Diabolo1114['Diabolo1024']=A_Diabolo1114['Diabolo1024'] / np.timedelta64(60,'s')
+A_Diabolo1114['Diabolo1114']=A_Diabolo1114['Diabolo_Out1114']-A_Diabolo1114['Diabolo_In1114']
+A_Diabolo1114['Diabolo1114']=A_Diabolo1114['Diabolo1114'] / np.timedelta64(60,'s')
 
 '''
 #A_DiaboloSports1121
@@ -156,10 +136,10 @@ A_Diabolo1121.rename(columns={A_Diabolo1121.columns[0]:"Student_ID_Number"}, inp
 A_Diabolo1121.rename(columns={A_Diabolo1121.columns[1]:"Diabolo_In1121"}, inplace=True )
 A_Diabolo1121.rename(columns={A_Diabolo1121.columns[2]:"Diabolo_Out1121"},inplace=True)
 
-A_Diabolo1121['Diabolo1024']=A_Diabolo1121['Diabolo_Out1121']-A_Diabolo1121['Diabolo_In1121']
-A_Diabolo1121['Diabolo1024']=A_Diabolo1121['Diabolo1024'] / np.timedelta64(60,'s')
+A_Diabolo1121['Diabolo1121']=A_Diabolo1121['Diabolo_Out1121']-A_Diabolo1121['Diabolo_In1121']
+A_Diabolo1121['Diabolo1121']=A_Diabolo1121['Diabolo1121'] / np.timedelta64(60,'s')
 
-'''
+
 '''
 数据整合
 '''
@@ -167,11 +147,11 @@ A_Diabolo1121['Diabolo1024']=A_Diabolo1121['Diabolo1024'] / np.timedelta64(60,'s
 Reletive = Student_info.join(A_JunKR.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
 Reletive = Reletive.join(A_UMOpening.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
 Reletive = Reletive.join(A_NightRun.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
-#Reletive = Reletive.join(A_Diabolo1024.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
-#Reletive = Reletive.join(A_Diabolo1027.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
-#Reletive = Reletive.join(A_Diabolo1107.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
-#Reletive = Reletive.join(A_Diabolo1114.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
-#Reletive = Reletive.join(A_Diabolo1121.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
+Reletive = Reletive.join(A_Diabolo1024.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
+Reletive = Reletive.join(A_Diabolo1027.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
+Reletive = Reletive.join(A_Diabolo1107.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
+Reletive = Reletive.join(A_Diabolo1114.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
+Reletive = Reletive.join(A_Diabolo1121.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
 
 
 '''
