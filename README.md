@@ -13,10 +13,13 @@ To collection the student information with their Check in &amp; Check out inform
 ### 更换班级
 
 将如下代码行替换成需要输入的学生班级表格
+  ···
   '''
   学生数据导入
   '''
   Student_info = pd.read_excel('D:\Mass\Sports_data\Water_class\section019.xlsx')
+  ···
+
 ### 添加活动
 #### 1 添加表格
 在**活动数据**模块中，添加如下代码行
