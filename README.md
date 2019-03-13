@@ -67,3 +67,9 @@ Reletive = Reletive.join(A_NightRun.set_index('Student_ID_Number'),on='Student_I
 ```python
 Reletive = Reletive.join(A_UMOpening.set_index('Student_ID_Number'),on='Student_ID_Number',how='left')
 ```
+#### 3 修改某班级对应n个活动的表格存储信息
+---
+更改所需存储信息的位置和表格名称，注意区分班级
+```
+Reletive.to_excel("D:\Mass\Sports_data\Combine\CPED1002_019.xlsx")
+```
