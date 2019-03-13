@@ -5,9 +5,9 @@ To collection the student information with their Check in &amp; Check out inform
 根据操作指南安装[Python 3.7.1](https://www.python.org/downloads/release/python-372/)和[Anaconda](https://medium.com/fishtung/python-anaconda-%E7%92%B0%E5%A2%83%E5%AE%89%E8%A3%9D%E6%95%99%E5%AD%B8-86bd13f8399d)
 
 ## 运行
-打开Anaconda-Spyder
-打开脚本File-open file 并运行Run
-生成结果存于Variable Explorer中 Relative表中。
+1. 打开Anaconda-Spyder
+2. 打开脚本(File-open file) 并运行(Run) 下载好的Script.py文件
+3. 生成整合结果可以预览与Spyeder 界面右上角，选择框Variable Explorer的 Relative表中。
 
 ## 修改关联表
 ### 更换班级
