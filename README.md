@@ -13,7 +13,8 @@ To collection the student information with their Check in &amp; Check out inform
 ### 更换班级
 
 将如下代码行替换成需要输入的学生班级表格
- ···
+
+···
   '''
   学生数据导入
   '''
@@ -23,9 +24,11 @@ To collection the student information with their Check in &amp; Check out inform
 ### 添加活动
 #### 1 添加表格
 在**活动数据**模块中，添加如下代码行
+      
       '''
       A_NightRun20190117
       '''
+      
       A_NightRun =pd.read_excel('D:\Mass\Sports_data\Active\A_NightRun20190117.xlsx')
       A_NightRun.rename(columns={A_NightRun.columns[0]:"Student_ID_Number"}, inplace=True)
       A_NightRun.rename(columns={A_NightRun.columns[1]:"NightRun_In"}, inplace=True )
